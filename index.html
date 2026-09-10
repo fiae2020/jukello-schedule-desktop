@@ -32,99 +32,123 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--fd);line-height:1.5;-webkit-font-smoothing:antialiased}
-.w{max-width:960px;margin:0 auto;padding:0 1.5rem}
+img{max-width:100%;display:block}
+.w{max-width:1120px;margin:0 auto;padding:0 1.75rem}
 a{color:var(--accent)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
-header{padding:1.5rem 0}
+/* ---- Header: full-width bar so the page has a top edge, not floating text ---- */
+header{position:sticky;top:0;z-index:50;background:rgba(238,241,247,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .w{display:flex;align-items:center;justify-content:space-between;padding-top:1rem;padding-bottom:1rem}
 .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:800;color:var(--ink);font-size:1.05rem}
 .brand .mark{width:30px;height:30px;border-radius:8px;background:var(--accent);display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .brand .mark svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2}
 .brand .tag{font-size:.62rem;color:var(--slate);font-weight:600;letter-spacing:.02em;margin-left:.3rem}
+.hlink{font-size:.85rem;font-weight:600;color:var(--slate);text-decoration:none}
+.hlink:hover{color:var(--accent)}
 
-.hero{padding:3.5rem 0 3rem}
+/* ---- Hero: full-bleed tinted band behind a real two-column grid ---- */
+.hero-band{background:linear-gradient(180deg,var(--accent-l) 0%,var(--bg) 100%);border-bottom:1px solid var(--line)}
+.hero{padding:3.5rem 0 4rem;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
 .hero .eyebrow{font-family:var(--fm);font-size:.72rem;color:var(--accent);margin-bottom:1rem}
-.hero h1{font-size:2.5rem;font-weight:900;letter-spacing:-.03em;line-height:1.1;margin:0 0 1rem;max-width:14ch}
-.hero p{font-size:1.1rem;color:var(--slate);max-width:46ch;margin:0 0 2rem;line-height:1.6}
+.hero h1{font-size:2.6rem;font-weight:900;letter-spacing:-.03em;line-height:1.12;margin:0 0 1rem;max-width:15ch}
+.hero p{font-size:1.08rem;color:var(--slate);max-width:42ch;margin:0 0 2rem;line-height:1.65}
 
-.dlcard{background:var(--surface);border:1px solid var(--line2);border-radius:20px;padding:2rem;box-shadow:var(--shlg);max-width:460px}
-.dlbtn{display:flex;align-items:center;justify-content:center;gap:.6rem;width:100%;background:var(--accent);color:#fff;font-weight:700;font-size:1.05rem;padding:1rem;border-radius:12px;text-decoration:none;transition:background .2s,transform .2s}
+.dlcard{background:var(--surface);border:1px solid var(--line2);border-radius:20px;padding:1.75rem;box-shadow:var(--shlg);max-width:440px}
+.dlbtn{display:flex;align-items:center;justify-content:center;gap:.6rem;width:100%;background:var(--accent);color:#fff;font-weight:700;font-size:1.02rem;padding:.9rem;border-radius:12px;text-decoration:none;transition:background .2s,transform .2s}
 .dlbtn:hover{background:var(--accent-h);transform:translateY(-1px)}
 .dlbtn svg{width:20px;height:20px;stroke:#fff;fill:none;stroke-width:2}
-.dlspecs{display:flex;justify-content:space-between;margin-top:1rem;font-family:var(--fm);font-size:.75rem;color:var(--slate)}
-.dlnote{font-size:.82rem;color:var(--slate);margin-top:1rem;line-height:1.6}
+.dlspecs{display:flex;justify-content:space-between;margin-top:.9rem;font-family:var(--fm);font-size:.72rem;color:var(--slate)}
+.dlnote{font-size:.8rem;color:var(--slate);margin-top:.9rem;line-height:1.6}
 .dlnote a{color:var(--accent);font-weight:600;text-decoration:none}
 .dlnote a:hover{text-decoration:underline}
 
-.shot{margin:3rem 0}
-.shot img{width:100%;height:auto;display:block;border:1px solid var(--line2);border-radius:16px;box-shadow:var(--sh)}
+.hero-shot{position:relative}
+.hero-shot img{border:1px solid var(--line2);border-radius:16px;box-shadow:var(--shlg);width:100%;height:auto}
 
-.steps{padding:3rem 0;border-top:1px solid var(--line)}
+/* ---- Everything below the hero shares the same .w rhythm ---- */
+.steps{padding:3.5rem 0;border-bottom:1px solid var(--line)}
 .steps h2{font-size:1.5rem;font-weight:800;margin:0 0 2rem;letter-spacing:-.02em}
 .steplist{list-style:none;margin:0;padding:0;display:grid;gap:1.5rem}
 .step{display:flex;gap:1.25rem;align-items:flex-start}
 .step .num{font-family:var(--fm);font-weight:700;font-size:.85rem;color:var(--accent);background:var(--accent-l);width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .step h3{font-size:1rem;font-weight:700;margin:0 0 .3rem}
-.step p{font-size:.92rem;color:var(--slate);margin:0;line-height:1.6;max-width:52ch}
+.step p{font-size:.92rem;color:var(--slate);margin:0;line-height:1.6;max-width:56ch}
 
-.specs{padding:3rem 0;border-top:1px solid var(--line)}
+.specs{padding:3.5rem 0;border-bottom:1px solid var(--line)}
 .specs h2{font-size:1.5rem;font-weight:800;margin:0 0 1.5rem;letter-spacing:-.02em}
-.specgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 3rem}
+.specgrid{display:grid;grid-template-columns:1fr 1fr;gap:1rem 3rem;margin:0}
 .specrow{display:flex;justify-content:space-between;padding:.75rem 0;border-bottom:1px solid var(--line);font-size:.9rem}
 .specrow dt{color:var(--slate)}
 .specrow dd{margin:0;font-weight:600;text-align:right}
 
-.otherversion{background:var(--surface-2);border-radius:20px;padding:2rem;margin:3rem 0;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.otherversion-wrap{padding:2.5rem 0}
+.otherversion{background:var(--surface-2);border-radius:20px;padding:2rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
 .otherversion h3{margin:0 0 .3rem;font-size:1.05rem}
 .otherversion p{margin:0;color:var(--slate);font-size:.9rem;max-width:38ch}
-.otherversion a{white-space:nowrap;font-weight:700;text-decoration:none;background:var(--surface);border:1.5px solid var(--line2);padding:.7rem 1.3rem;border-radius:10px}
+.otherversion a{white-space:nowrap;font-weight:700;text-decoration:none;background:var(--surface);border:1.5px solid var(--line2);padding:.7rem 1.3rem;border-radius:10px;flex-shrink:0}
 .otherversion a:hover{border-color:var(--accent);color:var(--accent)}
 
-footer{border-top:1px solid var(--line);padding:2.5rem 0;margin-top:2rem}
+footer{border-top:1px solid var(--line);padding:2rem 0}
 .fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.85rem;color:var(--slate)}
+.fbot a{color:var(--slate);text-decoration:none;font-weight:600}
+.fbot a:hover{color:var(--accent)}
 .fsoc{display:flex;gap:1.1rem}
-.fsoc a{color:var(--slate);text-decoration:none;font-weight:600}
-.fsoc a:hover{color:var(--accent)}
 
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;gap:2.5rem}
+  .hero-shot{order:-1}
+  .hero h1{max-width:none}
+}
 @media(max-width:640px){
+  .w{padding:0 1.25rem}
   .hero h1{font-size:1.9rem}
   .specgrid{grid-template-columns:1fr}
   .otherversion{flex-direction:column;align-items:flex-start;text-align:left}
+  .otherversion a{width:100%;text-align:center}
+  .hlink{display:none}
 }
 </style>
 </head>
 <body>
 
-<header class="w">
-  <a href="#top" class="brand" id="top">
-    <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
-    Jukello Schedule<span class="tag">Desktop</span>
-  </a>
+<header>
+  <div class="w">
+    <a href="#top" class="brand" id="top">
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+      Jukello Schedule<span class="tag">Desktop</span>
+    </a>
+    <a href="https://jukello.com" target="_blank" rel="noopener" class="hlink">jukello.com &rarr;</a>
+  </div>
 </header>
 
-<section class="hero w">
-  <div class="eyebrow">Windows 10 / 11 &middot; 14-day free trial</div>
-  <h1>Run your booking desk from one PC. No server, no subscription.</h1>
-  <p>Jukello Schedule Desktop books appointments, manages staff schedules and fills your waiting list — all offline, all on the machine at your front desk.</p>
+<div class="hero-band">
+  <section class="hero w">
+    <div class="hero-copy">
+      <div class="eyebrow">Windows 10 / 11 &middot; 14-day free trial</div>
+      <h1>Run your booking desk from one PC. No server, no subscription.</h1>
+      <p>Jukello Schedule Desktop books appointments, manages staff schedules and fills your waiting list — all offline, all on the machine at your front desk.</p>
 
-  <div class="dlcard">
-    <a class="dlbtn" href="https://github.com/fiae2020/jukello-schedule-desktop/releases/latest/download/jukello-schedule-trial-setup.msi" download>
-      <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
-      Download for Windows
-    </a>
-    <div class="dlspecs">
-      <span>jukello-schedule-trial-setup.msi</span>
-      <span>Windows 10/11 &middot; 64-bit</span>
+      <div class="dlcard">
+        <a class="dlbtn" href="https://github.com/fiae2020/jukello-schedule-desktop/releases/latest/download/jukello-schedule-trial-setup.msi" download>
+          <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
+          Download for Windows
+        </a>
+        <div class="dlspecs">
+          <span>jukello-schedule-trial-setup.msi</span>
+          <span>Windows 10/11 &middot; 64-bit</span>
+        </div>
+        <p class="dlnote">Free for 14 days, no card required. After the trial, a lifetime licence is <a href="https://scheduler.jukello.com/#buy" target="_blank" rel="noopener">$249.99 — registered here &rarr;</a></p>
+      </div>
     </div>
-    <p class="dlnote">Free for 14 days, no card required. After the trial, a lifetime licence is <a href="https://scheduler.jukello.com/#buy" target="_blank" rel="noopener">$249.99 — registered here &rarr;</a></p>
-  </div>
-</section>
 
-<div class="w shot">
-  <picture>
-    <source srcset="img/appointment-manager-dashboard-analytics.webp" type="image/webp">
-    <img src="img/appointment-manager-dashboard-analytics.png" alt="Jukello Schedule dashboard showing appointments overview, revenue, and status breakdown" width="1280" height="800" loading="lazy" decoding="async">
-  </picture>
+    <div class="hero-shot">
+      <picture>
+        <source srcset="img/appointment-manager-dashboard-analytics.webp" type="image/webp">
+        <img src="img/appointment-manager-dashboard-analytics.png" alt="Jukello Schedule dashboard showing appointments overview, revenue, and status breakdown" width="1280" height="800" loading="lazy" decoding="async">
+      </picture>
+    </div>
+  </section>
 </div>
 
 <section class="steps w">
@@ -155,7 +179,7 @@ footer{border-top:1px solid var(--line);padding:2.5rem 0;margin-top:2rem}
   </dl>
 </section>
 
-<div class="w">
+<div class="otherversion-wrap w">
   <div class="otherversion">
     <div>
       <h3>Need multiple staff logging in at once?</h3>
@@ -165,9 +189,9 @@ footer{border-top:1px solid var(--line);padding:2.5rem 0;margin-top:2rem}
   </div>
 </div>
 
-<footer class="w">
-  <div class="fbot">
-    <span>&copy; <span id="yr"></span> Jukello. Jukello Schedule Desktop is a Jukello product.</span>
+<footer>
+  <div class="w fbot">
+    <span>&copy; <span id="yr"></span> <a href="https://jukello.com" target="_blank" rel="noopener">Jukello</a>. Jukello Schedule Desktop is a Jukello product.</span>
     <div class="fsoc">
       <a href="https://www.tiktok.com/@jukelloschedule" target="_blank" rel="noopener noreferrer">TikTok</a>
       <a href="https://www.instagram.com/jukelloschedule/" target="_blank" rel="noopener noreferrer">Instagram</a>
