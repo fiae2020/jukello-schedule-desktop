@@ -6,8 +6,8 @@ Book appointments, manage staff schedules and fill your waiting list from a sing
 
 **Live page:** https://fiae2020.github.io/jukello-schedule-desktop/
 **Web version (on-premise):** https://schedule-onpremise.jukello.com/
-**Full product & pricing:** https://scheduler.jukello.com/
-**Jukello:** https://jukello.com/
+**Desktop pricing & registration (Windows 10/11):** https://scheduler.jukello.com/
+**Jukello:** https://jukello.com/ — cybersecurity, PrestaShop & CS-Cart development
 
 ## Why businesses switch to it
 
@@ -34,4 +34,4 @@ Same product underneath. The real question is whether one PC is enough, or you n
 | Best for | Solo operators, single location | Multi-location or a full front-desk team |
 
 → **On-premise web version:** https://schedule-onpremise.jukello.com/
-→ **Full product, pricing & desktop registration:** https://scheduler.jukello.com/
+→ **Desktop pricing & registration (Windows 10/11):** https://scheduler.jukello.com/
