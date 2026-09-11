@@ -35,3 +35,10 @@ Same product underneath. The real question is whether one PC is enough, or you n
 
 → **On-premise web version:** https://schedule-onpremise.jukello.com/
 → **Desktop pricing & registration (Windows 10/11):** https://scheduler.jukello.com/
+
+## Stuck, or just curious? We're here.
+
+Real answers, not a ticket queue.
+
+- **WhatsApp:** +387 64 44 41 377 (https://wa.me/387644441377)
+- **Email:** dzemal.imamovic@outlook.com

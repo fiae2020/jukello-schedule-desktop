@@ -96,6 +96,14 @@ header .w{display:flex;align-items:center;justify-content:space-between;padding-
 .cmpcard .cmpcta{margin-top:auto;font-weight:700;font-size:.9rem;text-decoration:none}
 .cmpcard .cmpcta:hover{text-decoration:underline}
 
+.help{padding:3rem 0}
+.helpbox{background:var(--surface-2);border-radius:20px;padding:1.75rem 2rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
+.helpbox h3{margin:0 0 .25rem;font-size:1.05rem}
+.helpbox p{margin:0;color:var(--slate);font-size:.9rem}
+.helplinks{display:flex;gap:.75rem;flex-wrap:wrap}
+.helplinks a{white-space:nowrap;font-weight:700;font-size:.88rem;text-decoration:none;background:var(--surface);border:1.5px solid var(--line2);padding:.6rem 1.1rem;border-radius:10px}
+.helplinks a:hover{border-color:var(--accent);color:var(--accent)}
+
 footer{border-top:1px solid var(--line);padding:2rem 0}
 .fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.85rem;color:var(--slate)}
 .fbot a{color:var(--slate);text-decoration:none;font-weight:600}
@@ -112,6 +120,9 @@ footer{border-top:1px solid var(--line);padding:2rem 0}
   .hero h1{font-size:1.9rem}
   .specgrid{grid-template-columns:1fr}
   .cmpgrid{grid-template-columns:1fr}
+  .helpbox{flex-direction:column;align-items:flex-start;text-align:left}
+  .helplinks{width:100%}
+  .helplinks a{flex:1;text-align:center}
   .hlink{display:none}
 }
 </style>
@@ -210,6 +221,19 @@ footer{border-top:1px solid var(--line);padding:2rem 0}
         <li>Best for multiple locations or a full front-desk team</li>
       </ul>
       <a href="https://schedule-onpremise.jukello.com/" target="_blank" rel="noopener" class="cmpcta">See the web version &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<section class="help w">
+  <div class="helpbox">
+    <div>
+      <h3>Stuck, or just curious? We're here.</h3>
+      <p>Real answers, not a ticket queue.</p>
+    </div>
+    <div class="helplinks">
+      <a href="https://wa.me/387644441377" target="_blank" rel="noopener">WhatsApp: +387 64 44 41 377</a>
+      <a href="mailto:dzemal.imamovic@outlook.com?subject=Jukello%20Schedule%20Desktop%20Question">Email us</a>
     </div>
   </div>
 </section>
