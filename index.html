@@ -82,12 +82,19 @@ header .w{display:flex;align-items:center;justify-content:space-between;padding-
 .specrow dt{color:var(--slate)}
 .specrow dd{margin:0;font-weight:600;text-align:right}
 
-.otherversion-wrap{padding:2.5rem 0}
-.otherversion{background:var(--surface-2);border-radius:20px;padding:2rem;display:flex;justify-content:space-between;align-items:center;gap:1.5rem;flex-wrap:wrap}
-.otherversion h3{margin:0 0 .3rem;font-size:1.05rem}
-.otherversion p{margin:0;color:var(--slate);font-size:.9rem;max-width:38ch}
-.otherversion a{white-space:nowrap;font-weight:700;text-decoration:none;background:var(--surface);border:1.5px solid var(--line2);padding:.7rem 1.3rem;border-radius:10px;flex-shrink:0}
-.otherversion a:hover{border-color:var(--accent);color:var(--accent)}
+.compare{padding:3.5rem 0;border-bottom:1px solid var(--line)}
+.compare h2{font-size:1.5rem;font-weight:800;margin:0 0 .5rem;letter-spacing:-.02em}
+.compare > .w > p{color:var(--slate);font-size:.95rem;margin:0 0 2rem;max-width:56ch}
+.cmpgrid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.cmpcard{background:var(--surface);border:1px solid var(--line2);border-radius:18px;padding:1.75rem;display:flex;flex-direction:column}
+.cmpcard.hl{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.cmptag{font-family:var(--fm);font-size:.68rem;color:var(--accent);margin-bottom:.5rem}
+.cmpcard h3{font-size:1.15rem;margin:0 0 .8rem;letter-spacing:-.01em}
+.cmplist{list-style:none;margin:0 0 1.25rem;padding:0;display:flex;flex-direction:column;gap:.55rem}
+.cmplist li{font-size:.88rem;color:var(--slate);padding-left:1.3rem;position:relative;line-height:1.5}
+.cmplist li::before{content:'✓';position:absolute;left:0;color:var(--accent);font-weight:700}
+.cmpcard .cmpcta{margin-top:auto;font-weight:700;font-size:.9rem;text-decoration:none}
+.cmpcard .cmpcta:hover{text-decoration:underline}
 
 footer{border-top:1px solid var(--line);padding:2rem 0}
 .fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;font-size:.85rem;color:var(--slate)}
@@ -104,8 +111,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0}
   .w{padding:0 1.25rem}
   .hero h1{font-size:1.9rem}
   .specgrid{grid-template-columns:1fr}
-  .otherversion{flex-direction:column;align-items:flex-start;text-align:left}
-  .otherversion a{width:100%;text-align:center}
+  .cmpgrid{grid-template-columns:1fr}
   .hlink{display:none}
 }
 </style>
@@ -179,15 +185,34 @@ footer{border-top:1px solid var(--line);padding:2rem 0}
   </dl>
 </section>
 
-<div class="otherversion-wrap w">
-  <div class="otherversion">
-    <div>
-      <h3>Need multiple staff logging in at once?</h3>
-      <p>The on-premise web version supports unlimited branches and simultaneous users on your own server.</p>
+<section class="compare w">
+  <h2>Desktop or web — pick what fits your business</h2>
+  <p>Same product underneath. The only real question is whether one PC is enough, or whether you need several people working at once.</p>
+  <div class="cmpgrid">
+    <div class="cmpcard hl">
+      <div class="cmptag">You're looking at this one</div>
+      <h3>Desktop — $249.99</h3>
+      <ul class="cmplist">
+        <li>One Windows PC, install and go</li>
+        <li>No server, no IT setup</li>
+        <li>Works fully offline</li>
+        <li>Best for a single front desk</li>
+      </ul>
+      <a href="#top" class="cmpcta">Download the trial &uarr;</a>
     </div>
-    <a href="https://schedule-onpremise.jukello.com/" target="_blank" rel="noopener">See the web version &rarr;</a>
+    <div class="cmpcard">
+      <div class="cmptag">For growing teams</div>
+      <h3>On-premise web — $2,499.99</h3>
+      <ul class="cmplist">
+        <li>Unlimited staff logged in at once</li>
+        <li>Unlimited branches, one dashboard</li>
+        <li>Self-hosted on your own server</li>
+        <li>Best for multiple locations or a full front-desk team</li>
+      </ul>
+      <a href="https://schedule-onpremise.jukello.com/" target="_blank" rel="noopener" class="cmpcta">See the web version &rarr;</a>
+    </div>
   </div>
-</div>
+</section>
 
 <footer>
   <div class="w fbot">
