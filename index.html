@@ -63,6 +63,9 @@ header .w{display:flex;align-items:center;justify-content:space-between;padding-
 .dlnote a{color:var(--accent);font-weight:600;text-decoration:none}
 .dlnote a:hover{text-decoration:underline}
 
+.msbtn{display:flex;align-items:center;justify-content:center;gap:.55rem;width:100%;margin-top:.9rem;background:var(--surface-2);color:var(--slate);font-weight:600;font-size:.85rem;padding:.7rem;border-radius:10px;border:1px dashed var(--line2);text-decoration:none;cursor:default;pointer-events:none}
+.msbtn svg{width:16px;height:16px;stroke:var(--slate);fill:none;stroke-width:1.5;opacity:.7}
+
 .hero-shot{position:relative}
 .hero-shot img{border:1px solid var(--line2);border-radius:16px;box-shadow:var(--shlg);width:100%;height:auto}
 
@@ -147,15 +150,19 @@ footer{border-top:1px solid var(--line);padding:2rem 0}
       <p>Jukello Schedule Desktop books appointments, manages staff schedules and fills your waiting list — all offline, all on the machine at your front desk.</p>
 
       <div class="dlcard">
-        <a class="dlbtn" href="https://github.com/fiae2020/jukello-schedule-desktop/releases/latest/download/jukello-schedule-trial-setup.msi" download>
+        <a class="dlbtn" href="https://github.com/fiae2020/jukello-schedule-desktop/releases/latest/download/JukelloScheduleSetup.exe" download>
           <svg viewBox="0 0 24 24"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 21h16"/></svg>
           Download for Windows
         </a>
         <div class="dlspecs">
-          <span>jukello-schedule-trial-setup.msi</span>
+          <span>JukelloScheduleSetup.exe</span>
           <span>Windows 10/11 &middot; 64-bit</span>
         </div>
         <p class="dlnote">Free for 14 days, no card required. After the trial, a lifetime licence is <a href="https://scheduler.jukello.com/#buy" target="_blank" rel="noopener">$249.99 — registered here &rarr;</a></p>
+        <a href="#" class="msbtn" aria-disabled="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/></svg>
+          Coming soon to the Microsoft Store
+        </a>
       </div>
     </div>
 
@@ -173,7 +180,7 @@ footer{border-top:1px solid var(--line);padding:2rem 0}
   <ol class="steplist">
     <li class="step">
       <span class="num">1</span>
-      <div><h3>Download and install</h3><p>Run the .msi — no admin server setup, no account required to start. It installs like any normal Windows program.</p></div>
+      <div><h3>Download and install</h3><p>Run the .exe — no admin server setup, no account required to start. It installs like any normal Windows program.</p></div>
     </li>
     <li class="step">
       <span class="num">2</span>
