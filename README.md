@@ -42,3 +42,14 @@ Real answers, not a ticket queue.
 
 - **WhatsApp:** +387 64 44 41 377 (https://wa.me/387644441377)
 - **Email:** dzemal.imamovic@outlook.com
+
+## Follow along
+
+- 🎵 **TikTok:** https://www.tiktok.com/@jukelloschedule
+- 📸 **Instagram:** https://www.instagram.com/jukelloschedule/
+- ▶️ **YouTube:** https://www.youtube.com/@jukelloschedule
+- ✖️ **X:** https://x.com/jukelloschedule
+- 📘 **Facebook:** https://www.facebook.com/jukelloschedule
+- 📌 **Pinterest:** https://www.pinterest.com/jukelloschedule/
+- 💼 **LinkedIn:** https://www.linkedin.com/in/dzemal-imamovic/
+- 🛠️ **Fiverr:** https://www.fiverr.com/demeldoo
