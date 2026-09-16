@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fiae2020.github.io/jukello-schedule-desktop/sitemap.xml
