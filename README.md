@@ -19,13 +19,13 @@ Book appointments, manage staff schedules and fill your waiting list from a sing
 
 ## Pricing that doesn't punish you for staying
 
-14-day free trial, every feature unlocked. Decide to keep it? **$249.99 once** — no subscription, no renewal, no per-seat fees. Own it forever.
+14-day free trial, every feature unlocked. Decide to keep it? **$349.99 once** — no subscription, no renewal, no per-seat fees. Own it forever.
 
 ## Desktop or web — which one fits?
 
 Same product underneath. The real question is whether one PC is enough, or you need several people working at once.
 
-| | **Desktop — $249.99** | **On-premise web — $2,499.99** |
+| | **Desktop — $349.99** | **On-premise web — $3,499.99** |
 |---|---|---|
 | Setup | One Windows PC, install and go | Self-hosted on your own server |
 | Users | Single front desk | Unlimited staff logged in at once |
