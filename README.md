@@ -5,6 +5,7 @@ The appointment scheduler that runs on one PC and never asks you for another pay
 Book appointments, manage staff schedules and fill your waiting list from a single Windows machine at the front desk — no server, no IT setup, no monthly bill eating into your margins.
 
 **Live page:** https://fiae2020.github.io/jukello-schedule-desktop/
+**Download the trial (.exe):** https://scheduler.jukello.com/trial/JukelloScheduleSetup.exe
 **Web version (on-premise):** https://schedule-onpremise.jukello.com/
 **Desktop pricing & registration (Windows 10/11):** https://scheduler.jukello.com/
 **Jukello:** https://jukello.com/ — cybersecurity, PrestaShop & CS-Cart development
